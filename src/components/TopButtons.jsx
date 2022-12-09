@@ -4,23 +4,23 @@ function TopButtons({ setQuery }) {
   const cities = [
     {
       id: 1,
-      title: "London",
+      title: "Kathmandu",
     },
     {
       id: 2,
-      title: "Sydney",
+      title: "Dharan",
     },
     {
       id: 3,
-      title: "Tokyo",
+      title: "Nepalgunj",
     },
     {
       id: 4,
-      title: "Toronto",
+      title: "Butwal",
     },
     {
       id: 5,
-      title: "Paris",
+      title: "Bhairahawa",
     },
   ];
 

@@ -10,6 +10,9 @@ import { useEffect, useState } from "react";
 // import { data } from "autoprefixer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Maintainance from "./components/Maintainance";
+
+
 
 function App() {
   const [query, setQuery] = useState({ q: "Pokhara" });
@@ -45,6 +48,8 @@ function App() {
     >
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
+      <Maintainance/>
+
       {weather && (
         <div>
           <TimeAndLocation weather={weather} />
