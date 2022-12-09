@@ -7,7 +7,7 @@ const getWeatherData = (infoType, searchParams) => {
   const url = new URL(BASE_URL + "/" + infoType);
   url.search = new URLSearchParams({ ...searchParams, appid: API_KEY });
 
-  return fetch(url).then((res) => res.json());
+  // return fetch(url).then((res) => res.json());
 };
 const formatCurrentWeather = (date) => {
   const {
@@ -51,7 +51,7 @@ const formatForecastWeather = (date) => {
   hourly = daily.slice(1, 6).map(d=>{
     return{
         title: formatToLocalTime(d.dt, timezone, 'hh:mm a'),
-        temp:d.temp.day,
+        temp:d.temp,
         icon:d.weather[0].icon 
     }
   });
@@ -75,11 +75,10 @@ const getFormattedWeatherDate = async (searchParams) => {
 
   return {...formattedCurrentWeather,...formatForecastWeather};
 };
-const formatToLocalTime =
-  (secs,
-  zone,
-  (format = "cccc,dd LLL yyyy' | Local Time: 'hh:mm a") =>
-    DateTime.fremSeconds(secs).setZone(zone).toFormat(format));
+const formatToLocalTime =(null)
+  // secs,
+  // zone,
+  // (format = "cccc,dd LLL yyyy' | Local Time: 'hh:mm a") => DateTime.fremSeconds(secs).setZone(zone).toFormat(format));
 
 const iconUrlFromCode=(code)=> `http://openweathermap.org/img/wn/${code}@2x.png`
 export default getFormattedWeatherDate;
