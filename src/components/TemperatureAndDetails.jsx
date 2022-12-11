@@ -27,6 +27,7 @@ function TemperatureAndDetails({
     <div>
       <div className="flex items-center justify-center py-6 text-xl text-cyan-300">
         <p>{details}</p>
+      <img src={iconUrlFromCode(icon)} alt="" className="w-10" />
       </div>
 
       <div className="flex flex-row items-center justify-between text-white py-3">

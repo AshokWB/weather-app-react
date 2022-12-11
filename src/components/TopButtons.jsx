@@ -20,7 +20,7 @@ function TopButtons({ setQuery }) {
     },
     {
       id: 5,
-      title: "Bhairahawa",
+      title: "Lumbini",
     },
   ];
 
