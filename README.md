@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+#Program Screenshot
+(https://github.com/AshokWB/weather-app-react/blob/weather-app/Screen%20Shot%202022-12-16%20at%2010.03.00.png?raw=true)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
